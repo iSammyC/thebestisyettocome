@@ -153,7 +153,8 @@ dl, ol, ul {
 }
 
 pre, code, samp {
-  font-family: 'Source Code Pro', Consolas, monospace;
+  font-family: 'Ropa Sans', Consolas, monospace;
+  letter-spacing: .1em;
   font-size: inherit;
 }
 
@@ -635,8 +636,8 @@ h6, .h6 { font-size: .75rem }
 }
 
 body {
-  color: #111;
-  background-color: white;
+  color: #3D3D3D;
+  background-color: #F4F4F4;
 }
 
 a {
@@ -645,8 +646,16 @@ a {
 }
 
 a:hover {
-  opacity: .85;
-  
+  opacity: 1;
+  text-decoration: none;
+}
+
+a.underline:hover {
+  text-decoration: underline;
+}
+
+a.dim:hover {
+  opacity: .6;
 }
 
 pre, code {
@@ -1055,7 +1064,7 @@ input[type=range] {
   border-left-color: rgba(0,0,0,.125);
 }
 
-.rounded { border-radius: 3px }
+.rounded { border-radius: 5px }
 .circle  { border-radius: 50% }
 
 .rounded-top    { border-radius: 3px 3px 0 0 }
@@ -1065,68 +1074,74 @@ input[type=range] {
 
 .not-rounded { border-radius: 0 }
 
-.black, .dark-gray   { color: #111 }
-.gray, .mid-gray     { color: #aaa }
-.silver, .light-gray { color: #ddd }
-.white { color: #fff }
+.myblack { color: #3D3D3D }
+.bg-myblack { background-color: #3D3D3D }
 
-.aqua  { color: #7fdbff }
-.blue  { color: #0074d9 }
-.navy  { color: #001f3f }
+
+.black, .dark-gray   { color: #202223 }
+.black-light { color: #3D3D3D;}
+.gray, .mid-gray     { color: #8e8e93 }
+.silver, .light-gray { color: #D8D8D8 }
+.white { color: #F4F4F4 }
+
+.aqua  { color: #5fc9f8 }
+.blue  { color: #147efb }
+.navy  { color: #08538c }
 .teal  { color: #39cccc }
-.green { color: #2ecc40 }
-.olive { color: #3d9970 }
+.green { color: #53d769 }
+.olive { color: #71c6c1 }
 .lime  { color: #01ff70 }
-
-.yellow  { color: #ffdc00 }
-.orange  { color: #ff851b }
+.pink  { color: #fc3158 }
+.yellow  { color: #fecb2e }
+.orange  { color: #fd9426 }
 .red     { color: #ff4136 }
 .fuchsia { color: #f012be }
-.purple  { color: #b10dc9 }
-.maroon  { color: #85144b }
-.bg-black, .bg-dark-gray   { background-color: #111 }
-.bg-gray, .bg-mid-gray     { background-color: #aaa }
-.bg-silver, .bg-light-gray { background-color: #ddd }
-.bg-white  { background-color: #fff }
+.purple  { color: #685bc7 }
+.maroon  { color: #b7295a }
+.bg-black, .bg-dark-gray   { background-color: #202223 }
+.bg-gray, .bg-mid-gray     { background-color: #8e8e93 }
+.bg-silver, .bg-light-gray { background-color: #D8D8D8 }
+.bg-white  { background-color: #F4F4F4 }
 
-.bg-aqua  { background-color: #7fdbff }
-.bg-blue  { background-color: #0074d9 }
-.bg-navy  { background-color: #001f3f }
+.bg-aqua  { background-color: #5fc9f8 }
+.bg-blue  { background-color: #147efb }
+.bg-navy  { background-color: #08538c }
 .bg-teal  { background-color: #39cccc }
-.bg-green { background-color: #2ecc40 }
-.bg-olive { background-color: #3d9970 }
+.bg-green { background-color: #53d769 }
+.bg-olive { background-color: #71c6c1 }
 .bg-lime  { background-color: #01ff70 }
-
-.bg-yellow  { background-color: #ffdc00 }
-.bg-orange  { background-color: #ff851b }
-.bg-red     { background-color: #ff4136 }
-.bg-fuchsia { background-color: #f012be }
-.bg-purple  { background-color: #b10dc9 }
-.bg-maroon  { background-color: #85144b }
+.bg-pink  { background-color: #fc3158 }
+.bg-yellow  { background-color: #fecb2e }
+.bg-orange  { background-color: #fd9426 }
+.bg-red     { background-color: #fc3d39 }
+.bg-fuchsia { background-color: #d0006f }
+.bg-purple  { background-color: #685bc7 }
+.bg-maroon  { background-color: #b7295a }
+.bg-black-light { background-color: #3D3D3D }
 
 .bg-darken-1 { background-color: rgba(0,0,0,.0625) }
 .bg-darken-2 { background-color: rgba(0,0,0,.125) }
 .bg-darken-3 { background-color: rgba(0,0,0,.25) }
 .bg-darken-4 { background-color: rgba(0,0,0,.5) }
-.border-black  { border-color: #111 }
-.border-gray   { border-color: #aaa }
-.border-silver { border-color: #ddd }
-.border-white  { border-color: #fff }
+.border-black  { border-color: #202223 }
+.border-gray   { border-color: #8e8e93 }
+.border-silver { border-color: #D8D8D8 }
+.border-white  { border-color: #F4F4F4 }
 
-.border-aqua  { border-color: #7fdbff }
-.border-blue  { border-color: #0074d9 }
-.border-navy  { border-color: #001f3f }
+.border-aqua  { border-color: #5fc9f8 }
+.border-blue  { border-color: #147efb }
+.border-navy  { border-color: #08538c }
 .border-teal  { border-color: #39cccc }
-.border-green { border-color: #2ecc40 }
-.border-olive { border-color: #3d9970 }
+.border-green { border-color: #53d769 }
+.border-olive { border-color: #71c6c1 }
 .border-lime  { border-color: #01ff70 }
-
+.border-pink  { border-color: #fc3158 }
 .border-yellow  { border-color: #ffdc00 }
-.border-orange  { border-color: #ff851b }
+.border-orange  { border-color: #fd9426 }
 .border-red     { border-color: #ff4136 }
 .border-fuchsia { border-color: #f012be }
-.border-purple  { border-color: #b10dc9 }
-.border-maroon  { border-color: #85144b }
+.border-purple  { border-color: #685bc7 }
+.border-maroon  { border-color: #b7295a }
 
 .border-darken-1 { border-color: rgba(0,0,0,.0625) }
 .border-darken-2 { border-color: rgba(0,0,0,.125) }
@@ -1139,8 +1154,36 @@ input[type=range] {
 /* STYLES CREATED BY ME */
 .card {
   box-shadow: rgba(0,0,0,.3) 0 1px 3px;
-  border-radius: 1px;
+  border-radius: 5px;
 }
+
+
+.hvr-shadow,
+.hvr-card,
+.card {
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: rgba(0,0,0,.3) 0 1px 3px;
+  border-radius: 1px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition:box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+  transition:box-shadow 0.28s cubic-bezier(0.4,0,0.2,1)
+}
+
+.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active,
+.card:hover, .card:focus, .card:active {
+-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.3);
+-moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.3);
+box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.3);
+}
+
+
+
+
+
 
 embed.play-btn {
     margin-left: -222px;
@@ -1228,55 +1271,10 @@ li.rssRow p {
   background-color: rgba(239, 34, 46, 1);
 }
 
-#cc-intro {
-  background: -webkit-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* W3C */
-                }
 
-.cc-card {
 
-  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #485563 10%, #29323c 90%); /* W3C */
-        
-}
 
-.cc-card-fav {
-  background: -webkit-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #f857a6 10%, #ff5858 90%); /* W3C */
-        }
 
-.bg-douban {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#24d42c+0,1ba922+100 */
-background: rgb(36,212,44); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(36,212,44,1) 0%, rgba(27,169,34,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(36,212,44,1)), color-stop(100%,rgba(27,169,34,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(36,212,44,1) 0%,rgba(27,169,34,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(36,212,44,1) 0%,rgba(27,169,34,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(36,212,44,1) 0%,rgba(27,169,34,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(36,212,44,1) 0%,rgba(27,169,34,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24d42c', endColorstr='#1ba922',GradientType=0 ); /* IE6-9 */
-}
-
-.amusic {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5a54+0,786bff+52,559cf6+75,22c8fe+100 */
-background: rgb(255,90,84); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(255,90,84,1) 0%, rgba(120,107,255,1) 52%, rgba(85,156,246,1) 75%, rgba(34,200,254,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,90,84,1)), color-stop(52%,rgba(120,107,255,1)), color-stop(75%,rgba(85,156,246,1)), color-stop(100%,rgba(34,200,254,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg,  rgba(255,90,84,1) 0%,rgba(120,107,255,1) 52%,rgba(85,156,246,1) 75%,rgba(34,200,254,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg,  rgba(255,90,84,1) 0%,rgba(120,107,255,1) 52%,rgba(85,156,246,1) 75%,rgba(34,200,254,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg,  rgba(255,90,84,1) 0%,rgba(120,107,255,1) 52%,rgba(85,156,246,1) 75%,rgba(34,200,254,1) 100%); /* IE10+ */
-background: linear-gradient(135deg,  rgba(255,90,84,1) 0%,rgba(120,107,255,1) 52%,rgba(85,156,246,1) 75%,rgba(34,200,254,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a54', endColorstr='#22c8fe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-}
 
 .catas {
   color: #aaa ;
@@ -1284,11 +1282,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a54', end
 }
 
 .amf {
-  
-  background: -webkit-linear-gradient(90deg, #FF512F 10%, #DD2476 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #FF512F 10%, #DD2476 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #FF512F 10%, #DD2476 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #FF512F 10%, #DD2476 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #FF512F 10%, #DD2476 90%); /* W3C */
+  background: -webkit-linear-gradient(90deg, #fc3158 10%, #fecb2e 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #fc3158 10%, #fecb2e 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #fc3158 10%, #fecb2e 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #fc3158 10%, #fecb2e 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #fc3158 10%, #fecb2e 90%); /* W3C */
         
 }
