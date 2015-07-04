@@ -1040,6 +1040,12 @@ input[type=range] {
   border-color: rgba(0,0,0,.125);
 }
 
+.border-dash {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.125);
+}
+
 .border-top {
   border-top-style: solid;
   border-top-width: 1px;
@@ -1272,6 +1278,15 @@ li.rssRow p {
 }
 
 
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
 
 
 
@@ -1288,4 +1303,22 @@ li.rssRow p {
   background:      -o-linear-gradient(90deg, #fc3158 10%, #fecb2e 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #fc3158 10%, #fecb2e 90%); /* W3C */
         
+}
+
+#top-1 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+}
+
+#top-r1 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-iteration-count: 1;
+}
+
+#top-r2 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-iteration-count: 1;
 }

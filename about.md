@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+這是一個我自己也無法準確去定義它的功能的網站。
+	
+我只是想做一個有關廣東流行樂的網站。但這個主題實在太大。而且，這個主題可以很個人，也可以很所有人。我希望做的是一個所有人都能獲得一點東西，卻又是一個屬於我自己喜歡的那些廣東歌的地方。
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+所以，最後決定這個網站的內容分為index 類以及私人類型。
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+index 主要是蒐集網絡上的一些有意義的資源。目前主要是播放列表。
